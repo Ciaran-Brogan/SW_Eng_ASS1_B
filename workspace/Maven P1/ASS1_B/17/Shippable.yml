@@ -12,7 +12,3 @@ build:
     - mvn test
     - mvn install
 	- cp -r target shippable/testresults
-	
-notifications:
-  email:
-recipients: c.brogan2@nuigalway.ie
