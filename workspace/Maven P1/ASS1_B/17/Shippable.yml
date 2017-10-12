@@ -5,11 +5,14 @@ jdk:
    
 
 
-after_success:
-   - mvn clean cobertura:cobertura
-   - mvn test
-   - mvn package
-
+build:
+    ci:
+    #Create folders for test and code coverage
+    - mkdir -p shippable/testresults
+    - mvn test
+    - mvn install
+	- cp -r target shippable/testresults
+	
 notifications:
   email:
 recipients: c.brogan2@nuigalway.ie
