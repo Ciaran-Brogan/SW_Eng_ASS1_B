@@ -1,0 +1,14 @@
+language: java
+
+jdk:
+   - openjdk7
+   - oraclejdk8
+
+
+build:
+    ci:
+    #Create folders for test and code coverage
+    - mkdir -p shippable/testresults
+    - mvn test
+    - mvn install
+	- cp -r target shippable/testresults
