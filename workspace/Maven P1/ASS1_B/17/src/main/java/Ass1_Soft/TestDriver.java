@@ -54,7 +54,7 @@ public class TestDriver {
         
         //Modules
         Module CT416 = new Module("System on Chip", "CT416", CS_IT);
-        Module CT417 = new Module("Software Eng. 3", "CT417", All);
+        Module CT417 = new Module("Software Eng3", "CT417", All);
         Module EE445 = new Module("DSP", "EE445", Eng);
         
         //Start and End Dates
